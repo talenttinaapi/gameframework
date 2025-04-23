@@ -123,7 +123,7 @@ export class BaseGameTest {
 // Create a test fixture that provides the BaseGameTest
 export const test = base.extend<{ gameTest: BaseGameTest }>({
   gameTest: async ({ page }, use) => {
-    const gameTest = new BaseGameTest(page, 'https://mobile-app1-gtp178.installprogram.eu/htmlGames/4.23.0/launch/superShowballMysteryLinkWinDesktop_Cocos_1_2_1_4/NekoGames/superShowballMysteryLinkWinDesktop?displayName=Super+Showball+Mystery%e2%84%a2+Link%26Win%e2%84%a2&moduleId=101883&clientId=50300&gamePath=/nekoGames/superShowballMysteryLinkWinDesktop&clientTypeId=70&gameId=superShowballMysteryLinkWinDesktop&languageCode=en&productId=5007&market=dotcom&brand=islandparadise&loginType=InterimUPE&returnUrl=https://mobile-app1-gtp178.installprogram.eu/lobby/en/IslandParadise/games/&routerEndPoints=¤cyFormat=&isPracticePlay=False&username=talent178&password=test1234$&formFactor=desktop');
+    const gameTest = new BaseGameTest(page, 'https://mobile-app1-gtp112.installprogram.eu/htmlGames/4.25.0/launch/buckBucksBagawk_Lume_2_0_0_41/mgs/buckBucksBagawk?displayName=Buck+Bucks+Bagawk%e2%84%a2&moduleId=100899&clientId=50300&gamePath=/mgs/buckBucksBagawk&clientTypeId=70&gameId=buckBucksBagawkV92Desktop&languageCode=en&productId=5007&market=dotcom&brand=islandparadise&loginType=InterimUPE&returnUrl=https://mobile-app1-gtp112.installprogram.eu/lobby/en/IslandParadise/games/&routerEndPoints=¤cyFormat=&isPracticePlay=False&username=talent112&password=test1234$&formFactor=desktop');
     await use(gameTest);
   }
 });

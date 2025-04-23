@@ -1,15 +1,23 @@
 import { test, expect, Page } from '@playwright/test';
 
-test.describe('Super Showball Mystery Link&Win Game Tests', () => {
+test.describe('Buck Bucks Bagawk Game Tests', () => {
   let page: Page;
 
   test.beforeEach(async ({ browser }) => {
     page = await browser.newPage();
-    await page.goto('https://mobile-app1-gtp178.installprogram.eu/htmlGames/4.23.0/launch/superShowballMysteryLinkWinDesktop_Cocos_1_2_1_4/NekoGames/superShowballMysteryLinkWinDesktop?displayName=Super+Showball+Mystery%e2%84%a2+Link%26Win%e2%84%a2&moduleId=101883&clientId=50300&gamePath=/nekoGames/superShowballMysteryLinkWinDesktop&clientTypeId=70&gameId=superShowballMysteryLinkWinDesktop&languageCode=en&productId=5007&market=dotcom&brand=islandparadise&loginType=InterimUPE&returnUrl=https://mobile-app1-gtp178.installprogram.eu/lobby/en/IslandParadise/games/&routerEndPoints=¤cyFormat=&isPracticePlay=False&username=talent178&password=test1234$&formFactor=desktop');
+    await page.goto('https://mobile-app1-gtp112.installprogram.eu/htmlGames/4.25.0/launch/buckBucksBagawk_Lume_2_0_0_41/mgs/buckBucksBagawk?displayName=Buck+Bucks+Bagawk%e2%84%a2&moduleId=100899&clientId=50300&gamePath=/mgs/buckBucksBagawk&clientTypeId=70&gameId=buckBucksBagawkV92Desktop&languageCode=en&productId=5007&market=dotcom&brand=islandparadise&loginType=InterimUPE&returnUrl=https://mobile-app1-gtp112.installprogram.eu/lobby/en/IslandParadise/games/&routerEndPoints=¤cyFormat=&isPracticePlay=False&username=talent112&password=test1234$&formFactor=desktop');
     
     // Wait for game to load completely
     await page.waitForLoadState('networkidle');
     await page.waitForSelector('canvas', { state: 'visible' });
+  });
+
+/*test.terEach(async () => {
+    // Wait for 5 seconds (5000 milliseconds) to observe the UI
+    await page.waitForTimeout(10000);
+  
+    // Close the page after the wait
+    await page.close();
   });
 
   test('should launch game successfully', async () => {
@@ -116,5 +124,5 @@ test.describe('Super Showball Mystery Link&Win Game Tests', () => {
 
   test.afterEach(async () => {
     await page.close();
-  });
+  });*/
 });
