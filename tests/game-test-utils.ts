@@ -17,22 +17,22 @@ export const test = baseTest.extend<{
     // Shared setup logic for game tests
     await use({
       setup: async () => {
-        // Setup logic
+        
       },
       verifyGameLaunch: async () => {
-        // Verification logic
+      
       },
       navigatePaytable: async () => {
-        // Navigation logic
+        
       },
       controlSound: async () => {
-        // Sound control logic
+      
       },
       accessHelpFiles: async () => {
-        // Help file access logic
+        
       },
       completeSpin: async () => {
-        // Spin completion logic
+        
       },
     });
   },
