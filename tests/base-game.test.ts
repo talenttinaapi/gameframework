@@ -4,7 +4,7 @@ export class BaseGameTest {
   readonly page: Page;
   readonly gameUrl: string;
   
-  // Game elements that should be overridden by specific game implementations
+  // These game elements to be customised by specific game implementations
   protected selectors = {
     canvas: 'canvas',
     gameContainer: '.game-container',
