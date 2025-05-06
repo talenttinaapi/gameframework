@@ -26,7 +26,7 @@ test.describe('Buck Bucks Bagawk Game Tests', () => {
     const balance = await balanceElement.textContent();
     expect(parseFloat(balance || '0')).toBeGreaterThan(0);
   });
-  /*st('should open and navigate paytable', async ({ gameTest }) => {
+  test('should open and navigate paytable', async ({ gameTest }) => {
     await gameTest.navigatePaytable();
   });
 
@@ -40,5 +40,5 @@ test.describe('Buck Bucks Bagawk Game Tests', () => {
 
   test('should complete a spin successfully', async ({ gameTest }) => {
     await gameTest.completeSpin();
-  });*/
+  });
 });

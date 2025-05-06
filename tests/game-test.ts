@@ -12,7 +12,7 @@ test.describe('Buck Bucks Bagawk Game Tests', () => {
     await page.waitForSelector('canvas', { state: 'visible' });
   });
 
-/*test.terEach(async () => {
+*test.terEach(async () => {
     // Wait for 5 seconds (5000 milliseconds) to observe the UI
     await page.waitForTimeout(10000);
   
@@ -124,5 +124,5 @@ test.describe('Buck Bucks Bagawk Game Tests', () => {
 
   test.afterEach(async () => {
     await page.close();
-  });*/
+  });
 });
