@@ -9,18 +9,17 @@ test.describe('Buck Bucks Bagawk Game Tests', () => {
 
   
   test('should launch game successfully', async ({ page }) => {
-    // Wait for loading screen to disappear (if applicable)
     await page.waitForSelector('.new-loading-screen-class', { state: 'hidden', timeout: 10000 });
   
-    // Verify essential game elements are present
+    // Essential game elements are present
     await expect(page.locator('canvas')).toBeVisible({ timeout: 10000 });
     await expect(page.locator('.new-game-container-class')).toBeVisible();
   
-    // Verify game is in a playable state
+    //Game playability
     await expect(page.locator('.new-loading-screen-class')).not.toBeVisible();
     await expect(page.locator('.new-error-message-class')).not.toBeVisible();
   
-    // Verify initial balance is displayed
+    // Checking balance
     const balanceElement = page.locator('.new-balance-display-class');
     await expect(balanceElement).toBeVisible();
     const balance = await balanceElement.textContent();
